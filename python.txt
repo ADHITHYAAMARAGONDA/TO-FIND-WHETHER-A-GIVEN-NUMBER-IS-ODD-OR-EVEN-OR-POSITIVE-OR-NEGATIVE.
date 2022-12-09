@@ -1,0 +1,30 @@
+import random
+
+#USER INPUT
+num = random.randrange(-100,100)
+print("chosen number:",num)
+
+#PRIME AND COMPOSITE 
+if num > 1:
+    for i in range(2, num):
+        if (num % i) == 0:
+            print(num, "is a composite number")
+            break
+    else:
+        print(num, "is a PRIME number")
+elif num == 0 or 1:
+    print(num, "is a neither prime NOR composite number")
+else:
+    print(num, "is NOT a prime number it is a COMPOSITE number")
+
+#POSITIVE AND NEGATIVE 
+if num < 0:
+    print("It is a negative number")
+else:
+    print("It is a positive number")
+
+#ODD OR EVEN
+if num%2 == 0:
+    print(num,"It is even")
+else:
+    print(num,"It is odd")
